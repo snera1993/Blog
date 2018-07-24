@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>aJAX 3 - External API</title>
+
+   <style>
+   .user{
+     display: flex;
+     background-color: cyan;
+     padding: 10px;
+     margin-bottom: 10px;
+   }
+
+   .user ul{
+     list-style: none;
+   }
+   </style>
+
+
+ </head>
+ <body>
+   <button id="button">Load Github Users</button>
+
+   <br>
+
+   <div id="users"></div>
+
+   <script type="text/javascript">
+     document.getElementById("button").addEventListener('click', loadUsers);
+
+     function loadUsers(){
+
+       var xhr = new XMLHttpRequest();
+       xhr.open('GET', 'git-users.json', true);
+
+       xhr.onload = function(){
+         if(xhr.status == 200){
+           var users = JSON.parse(xhr.responseText);
+
+           var output = "";
+
+           for(var i in users){
+             output +=
+
+             '<div class="user">' +
+             '<img src="'  + users[i].avatar_url + '""width="80px" height="80px">' +
+             '<ul>' +
+             '<li>ID:' + users[i].id + '</li>' +
+             '<li>Login: ' + users[i].login +
+             '</li>' +
+             '</ul>' +
+             '</div>';
+           }
+
+           document.getElementById("users").innerHTML = output;
+
+
+         }else if(xhr.status == 404) {
+           console.log("NOt Found!")
+         }
+       }
+       xhr.send();
+     }
+   </script>
+
+ </body>
+</html>
+Message Input

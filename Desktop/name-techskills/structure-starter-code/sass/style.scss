@@ -1,0 +1,267 @@
+$primary-color: rgb(23, 42, 67);
+$secondary-color: rgb(197, 111, 54);
+$text-color: rgb(255, 255, 255);
+$heading-color: rgb(201, 201, 201);
+$background-color: rgb(21, 21, 21);
+
+@font-face {
+  font-family: denseFont;
+/*------Activity - Link the roboto.light.ttf below------*/
+  src: url();
+}
+
+// Extend/Inheritance
+@mixin button($button-text-color, $button-bg-color , $border-color) {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px 28px;
+  color: $button-text-color;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  background-color:  $button-bg-color;
+  text-align: center;
+  cursor: pointer;
+}
+
+// Initialisation of body
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: $background-color;
+    font-family: 'Century Gothic';
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'denseFont';
+}
+
+// Hero Image
+.header {
+    background-image: url('../img/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    padding: 0 20px;
+    overflow: hidden;
+
+    h1 {
+      padding: 0;
+      font-size: 50px;
+    }
+
+    p {
+      padding: 0;
+      margin-top: -25px;
+    }
+  }
+  
+  .header-text {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 5px 0;
+  }
+  
+  .header-text .primary-button{
+    @include button($text-color, $secondary-color, $secondary-color);
+  }
+
+  .header-text .secondary-button{
+    @include button($secondary-color, transparent, $secondary-color);
+  }
+  
+  .header-text .primary-button:hover  {
+    background-color: $secondary-color * 0.9;
+    color: white;
+  }
+
+  .secondary-button:hover {
+    color: white;
+    background-color: $secondary-color;
+  }
+
+
+// Intro section
+
+.intro-section {
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  padding: 75px 0;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 26px;
+    display: inline-block;
+    padding: 10px 0;
+  }
+
+  hr {
+    padding: 0;
+    width: 10%;
+    height: 1px;
+    background-color: $secondary-color;
+    border: none;
+  }
+
+  p {
+    padding: 10px 0;    
+  }
+
+  p span{
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
+}
+
+
+@mixin panel-default() {
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+// Panel
+  .plans {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    grid-column-gap: 30px;
+    padding: 30px;
+    justify-content: center;
+  }
+
+  .panel-1 {
+    .panel-image {
+      /*------Activity - Link the Mixer.png below------*/
+      background-image: url("");
+    }
+  }
+
+  .panel-2 {
+    .panel-image {
+      /*------Activity - Link the Headphone.png below------*/
+      background-image: url("");
+    }
+  }
+
+  .panel-3 {
+    .panel-image {
+      /*------Activity - Link the DJ-Mixer.png below------*/
+      background-image: url("");
+    }
+  }
+  .panel-1, .panel-2, .panel-3 {
+
+
+    @include panel-default();
+
+    .panel-image {
+      background-position: center;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      // background-attachment: fixed; This creates a parallax effect
+      height: 320px;
+      width: inherit;
+      // border: 1px solid $primary-color;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .panel-image:hover {
+      background-size: 90%;
+    }
+
+    
+    .panel-text {
+      color: rgb(41, 41, 41);
+      font-weight: bold;
+      margin: auto;
+      width: 50%;
+      // background-color: $secondary-color * 1.2;
+      border-top: 3px solid $secondary-color * 1.2;
+      // border-bottom-left-radius: 10px;
+      // border-bottom-right-radius: 10px;      
+    }
+  }
+
+
+/**************parallax-section****************/
+  .parallax-section {
+    background-image: url('../img/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+  }
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+  opacity: 0;
+  animation: theAnimation 1s;
+  animation-fill-mode: forwards;
+    img {
+      width: 30%;
+    }
+}
+
+@keyframes theAnimation{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+//Adding functionality for responsive design
+@import 'responsive';

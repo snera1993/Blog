@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript3</title>
+
+    <script src="js/main.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+
+    <input type="number" name="text" value="" id="myTxt">
+    <button onclick="btnClick" name="button" id="btn">Test Me</button>
+    <!-- input type="button" value="Test Me"  -->
+
+    <script>
+    //bind an onclick event when the page loads
+  document.getElementById('btn').onclick = function(){
+      //grabs value from input
+      var userInput = document.getElementById('myTxt').value;
+
+      if(typeof(userInput) == "string"){
+        // console.log('string check working')
+        // console.log('invalid ID')
+
+
+        if ((userInput.length) != 13) {
+          console.log('invalid ID')
+        }
+      }
+
+      if (userInput) {
+        //logs value to console
+        console.log(userInput);
+      }
+      else if(!userInput){
+        alert('Please enter a number');
+      }
+      else {
+        alert('Please go away');
+      }
+
+  }
+
+    // //custom function that runs when triggered
+    // function btnClick(){
+    //   //grabs value from userInput
+    //   var userInput = document.getElementById('myTxt').value;
+    //   //logs value to console.
+    //   console.log(userInput);
+    // }
+
+
+    //this will log when both values return true
+    if( (1 == 1) &&(2 == 2) ){
+      console.log('AND');
+    }
+
+    if( ("text" === "text") && (2 != 1) ){
+      console.log('AND');
+    }
+
+    if( (true) || (false) ){
+      console.log('OR');
+    }
+
+    var x = true;
+    var y = false;
+
+    if(!x || y){
+      console.log('OR');
+    }
+
+
+
+    </script>
+
+  </body>
+</html>

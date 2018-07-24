@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Pangolin");
+body {
+  background-color: green;
+  font-family: "Pangolin"; }
+  body main {
+    background: grey; }
+    body main p:nth-last-of-type(1) {
+      color: purple;
+      background: black; }
+
+header {
+  background: skyblue;
+  padding: 2px;
+  text-align: center;
+  font-family: "Open Sans"; }
+
+p {
+  color: white; }
+
+p.para2 {
+  color: yellow; }
+
+footer {
+  background: skyblue;
+  padding: 2px;
+  text-align: center;
+  font-family: "Open Sans"; }
+
+/*# sourceMappingURL=style.css.map */

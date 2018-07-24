@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+  </head>
+
+
+  <body>
+    whatever man
+
+
+    <button id="button" type="button" name="button">Get Data</button>
+
+
+
+    <script>
+      document.getElementById('button').addEventListener('click', loadText);
+
+      function loadText() {
+        //1. Create the XHR Object
+        var ourReq = new XMLHttpRequest();
+        //2. Open - type, url/file, async
+        ourReq.open('GET', 'sample.txt', true);
+
+        //3. Use onload - Check for the status of the response
+        //HTTP statuses
+        //200: "OK"
+        //403: "Forbidden"
+        //404: "Not Found"
+        ourReq.onload = function(){
+
+          if(ourReq.status == 200){
+            console.log(ourReq.responseText);
+          } else if(ourReq.status == 404){
+            console.log("Not Found!");
+          }
+
+        }
+        ourReq.send();
+      }
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

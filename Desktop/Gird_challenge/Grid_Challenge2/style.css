@@ -1,0 +1,114 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
+
+#container{
+  display: grid;
+  grid-template-areas:
+    "nav section1"
+    "0 section2"
+   ;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 2000px 1fr;
+  grid-gap:4px;
+  font-family: Open Sans;
+}
+
+
+#pageNav{
+  grid-area: nav;
+  background-color:black ;
+  padding: 20px;
+  color: white;
+  height: ;
+  position: fixed ;
+  width: 350px;
+}
+
+#pageSection1{
+  grid-area: section1;
+  padding: 0 30px 0 30px;
+}
+#pageSection1  img{
+    width: 500px;
+}
+
+#pageSection1 h2{
+  font-size: 30px;
+}
+
+
+#pageSection2{
+  grid-area: section2;
+  padding: 0 30px 0 30px;
+}
+
+#pageSection2 img{
+  height:;
+  width: 450px;
+}
+
+#pageSection2 h2{
+  font-size: 30px;
+}
+
+#icon{
+  display: ;
+  margin-left: ;
+  margin-right: ;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width:thick;
+}
+
+.navlist1{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400px;
+  color: grey;
+}
+
+
+
+.navlist2{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400px;
+  color: grey;
+}
+
+
+.Aboutme{
+  margin-left: 40px;
+  font-size: 20px;
+  color: yellow;
+}
+
+#div1{
+  text-align: center;
+  font-size: 20px;
+}
+
+#div1 h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+#div2{
+
+}
+
+#div2 h2{
+  margin-left: 40px;
+  font-size: 20px;
+  color: red;
+}
+
+#div2 a{
+  text-decoration: none;
+  color: grey;
+
+}

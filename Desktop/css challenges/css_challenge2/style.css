@@ -1,0 +1,91 @@
+/* General setup */
+/* Remember to always comment*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing:2px ;
+  word-spacing:5px ;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+/*list style*/
+
+ul{
+  list-style:square;
+}
+
+
+
+/*mouse over link*/
+a:hover{
+  color:blue;
+  text-decoration:none;
+
+}
+
+
+/*visited*/
+a:visited{
+  color:purple;
+}
+
+
+/*unvisited link*/
+a:link{
+  color:#a66;
+}
+
+a:focus{
+  color: green;
+}
+
+
+.para{
+  text-indent: 20px;
+}
+
+aside {
+  background-color: #e5d9d9;
+  float: left;
+  width: 30%;
+}
+
+nav {
+  background-color: #c0a6a6;
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+h1,h2{
+  letter-spacing: 3px;
+}
+/* WRITE YOUR CODE BELOW HERE */

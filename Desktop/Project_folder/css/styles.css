@@ -1,0 +1,59 @@
+/*Styles by Michael, Giving a BG (backgroud) to the page*/
+
+body {
+  background-color: skyblue
+}
+
+.menu {
+    /* padding: 15px; */
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.heading {
+    color: white;
+    padding: 13px;
+    text-align: center;
+    background-color: olivedrab;
+    font-family: Julius Sans one;
+
+}
+
+  .image {
+      float:left;
+      padding: 20px;
+}
+
+.para {
+    padding-left: 38%;
+    font-family: Cookie;
+    font-size: 30px;
+}
+
+.img-circle {
+  border-radius: 50%
+
+}
+
+.form{
+  padding:20px;
+  font-family: fantasy;
+}
+
+#soldiers{
+backgound-image: url("css/soldiers.JPG")
+}
+
+
+@media only screen and (min-width: 480px) {
+.para{
+
+}
+
+
+
+}

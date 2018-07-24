@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+<script type="text/javascript"></script>
+
+<!-- EXTERNAL JS FILE -->
+<script src="js/main.js" charset="utf-8"></script>
+    <!-- JAVASCRIPT HEAD TAG -->
+
+  </head>
+  <body>
+    <script>
+
+    // console.log('HELLO WORLD');
+    // alert('HELLO');
+    // confirm('is this you');
+    // prompt('Please enter your name,Michael')
+
+    // varieble
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+    console.log(z)
+
+    var me = "Michael";
+    var question = "Are you "; //string
+    var number = "5" //string
+    var ask = question + me;
+    console.log(ask);
+
+    // ARRAYS
+    //two ways to declare a new array
+    var hobbies = [];
+    var hobbies = new Array();
+
+    console.log(hobbies);
+
+    var favourite_hobby = "gaming";
+
+    //add new item to my array using the push method
+    //hobbies.push(favourates hobby);
+    hobbies[0] = favourite_hobby; //assing value to index
+
+    console.log(hobbies);
+
+
+    var newVar; //declaring a new variable - undefined
+    console.log(newVar) //undefined
+
+    var thisIsABoolean = true;
+    var thisIsABoolean = false;
+    console.log(thisIsABoolean) //false - boolean example
+
+    var thisIsNothing = null; //not eqaul to underfined,value is "empty"
+
+    var array = ['hiking','camping','climbing','swimming'];//list of things
+    //contain more than one value, zero indexed
+
+    //objects are variables  that contains properties
+    var object = {name:"Crezell", age:16,location: "Cape town",}
+
+    var Car = {
+      make: "Toyota", //property value pair / key value pairs
+      year:2007,
+      colour: "Blue",
+    }
+
+    //javascript date objects
+    var date = new Date();
+    console.log(date);
+
+
+
+
+
+    // console.log(j)
+    // console.log(x)
+    // var x = 0;
+
+    // this is what actually happens in the example above
+      // x;
+      // console.log(x)
+      // var x = 0;
+
+
+
+      console.log(a)
+        var a = 2;
+      // console.log(b)
+      // console.log(c);
+        let c = 2;    //const/let does not getv hoisted
+      console.log(c)
+
+
+
+
+
+      // var is function scoped
+    // function fool() {
+    //   var = i = 5;
+    // }
+    // console.log(i);
+    //undefined
+
+
+
+
+    //var is not block scoped
+    var x = 5;
+    if (true) {
+      var x = 6;
+    }
+    console.log(x);
+    //6
+
+
+    </script>
+  </body >
+</html>

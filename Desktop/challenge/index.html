@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Change this title to your name</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="js/processing.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" >
+        <h1>Change this heading to your name</h1>
+        <p>Change this text to be a paragraph which introduces you. How old you are, where you live, what your favorite hobby is.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Lists</h1>
+        <p>Add 3 more items to the shopping list below.  </p>
+        <ul>
+          <li>Milk</li>
+          <li>Coffee</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Table</h1>
+        <p>Add 2 more people to the table below.  </p>
+        <table class="u-full-width">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Location</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Paul Gamache</td>
+            <td>26</td>
+            <td>Male</td>
+            <td>Kenilworth</td>
+          </tr>
+          <tr>
+            <td>Vernoika Johnson</td>
+            <td>42</td>
+            <td>Female</td>
+            <td>Langa</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns twelve">
+        <h2>Drawing</h2>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="one-half column">
+        <p>The face below on the grey background is an image. </p>
+      </div>
+
+      <div class="one-half column">
+        <p>The three circles below on the black background need to be repositioned until the image looks the same as the one on the lieft. The circles have been drawn using JavaScript and it's ellipse() function.
+        Find the function and modify the inputs. Look for the code under //SIMPLE FACE.</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="one-half column">
+        <img src="images/face.png" alt="">
+        <div>
+
+        </div>
+
+      </div>
+      <div class="one-half column">
+        <canvas id="pjs"> </canvas>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="row">
+      <div class="one-half column">
+        <p>The face below with the headband is an image. </p>
+      </div>
+
+      <div class="one-half column">
+        <p>Recreate the image on the left using by fixing the JavaScript. Look for the code under //HEADBAND.</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="one-half column">
+        <img src="images/headband.png" alt="">
+        <div>
+
+        </div>
+
+      </div>
+      <div class="one-half column">
+        <canvas id="band"> </canvas>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script type="application/processing" data-processing-target="pjs">
+  void setup() {
+    size(500, 500);
+    background(0);
+    stroke(255);
+
+
+    //ellipse(x,y,width,height)
+
+
+    //SIMPLE FACE
+    ellipse(100, 150, 100, 100);
+    ellipse(400, 100, 100, 100);
+    ellipse(150, 350, 200, 200);
+
+
+
+  }
+ </script>
+
+
+
+
+<script type="application/processing" data-processing-target="band">
+  void setup() {
+
+    size(500, 500);
+
+    noStroke();
+
+    //HEADBAND
+
+    background(0, 255, 242); // RGB
+
+    // face
+    fill(255, 242, 0);
+    ellipse(202, 208, 300, 300);
+
+    // eyes
+    fill(0, 0, 0);
+    ellipse(20, 151, 40, 40);
+    ellipse(50, 100, 40, 40);
+
+    // mouth
+    fill(255, 0, 0);
+    ellipse(10, 240, 120, 136);
+
+    // headband
+    stroke(191, 0, 255);
+    strokeWeight(37);
+    line(80, 115, 370, 75);
+
+
+
+
+  }
+ </script>
+
+

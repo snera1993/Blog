@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="css/index.css">
+
+  </head>
+  <body>
+
+    <p>If you click on me, I will disappear</p>
+    <p>Click me away</p>
+    <p>Click me too</p>
+
+      <div class="circle1"></div>
+      <p></p>
+      <div class="circle2"></div>
+      <p></p>
+      <div class="circle3"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+      //jQeury uses CSS syntax to select
+
+      $(document).ready(function(){
+        $("p").click(function(){
+          $(this).animate({marginLeft:'1000px'},800);
+        });
+      });
+
+
+      $(document).ready(function(){
+        $(".circle1").mouseover(function(){
+          $(this).hide({});
+        });
+      });
+
+      $(document).ready(function(){
+        $(".circle2").mouseover(function(){
+          $(this).hide({});
+        });
+      });
+
+      $(document).ready(function(){
+        $(".circle3").mouseover(function(){
+          $(this).hide({});
+        });
+      });
+    </script>
+
+  </body>
+</html>

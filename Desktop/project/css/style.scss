@@ -1,0 +1,51 @@
+// myPrimaries
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+$primaryColor: green;
+$primaryFont: 'Pangolin';
+$primaryFontSize: 20px;
+$secondaryFont: cursive;
+
+@mixin strips{
+  background: skyblue;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Open Sans'
+
+
+
+}
+
+
+body{
+  background-color: $primaryColor;
+  font-family:$primaryFont;
+
+  main{
+    background: grey;
+
+    p:nth-last-of-type(1) {
+      color: purple;
+      background: black;
+    }
+  }
+
+
+}
+
+  header{
+    @include strips
+  }
+
+p{
+  color: white;
+}
+
+p.para2{
+  color: yellow;
+}
+
+
+footer{
+  @include strips
+}

@@ -1,0 +1,118 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+
+body{
+    font-family: IBM Plex Mono;
+}
+
+ul{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 93.95em;
+  grid-template-rows:10em 35em 21em 27em 25em 25em 25em ;
+  grid-gap:1em ;
+  background-color: darkgrey;
+}
+
+.box1{
+      background-color: #bacbd2;
+      text-align: center;
+      font-size: 280%;
+      color: white;
+
+}
+
+.box2{
+  font-size: 3em;
+  background-image: url("images/the_one.jpg");
+  color:teal;
+  text-shadow:0.04em 0.04em 0.09em white;
+}
+
+.box3{
+  background-color:#f1f1f1;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  color:#82765f;
+}
+
+.box4{
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  color:#82765f;
+  background-color: #c8c8ff;
+}
+
+.box5{
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  color:#82765f;
+  background-color: #c8c8ff;
+}
+
+.box6{
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  color:#82765f;
+  background-color: #c8c8ff;
+}
+
+.box7{
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  color:#82765f;
+  background-color: #c8c8ff;
+}
+
+
+.p2{
+  color:teal;
+  text-shadow:0.04em 0.04em 0.09em white;
+  font-family: IBM Plex Mono;
+  font-size:0.5em;
+}
+
+.div1{
+  padding-left: ;
+  padding-right: 4em;
+  float: left;
+}
+
+.div2{
+  padding-left: ;
+  padding-right: 40em;
+  float: right;
+}
+
+h2{
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+
+h1{
+  text-decoration: underline;
+}

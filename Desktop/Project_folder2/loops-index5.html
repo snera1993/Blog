@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <script>
+      // basic for loop
+      for(var i = 0; i < 10; i++){
+        console.log(i);
+      }
+
+
+      var toys = ['car ','teddybear ','soccer ball ','G.I. JOE '];
+
+      // E56
+      for(let value of toys){
+        document.write(value);
+      }
+
+      // E55
+      for(var i = 0; i < toys.length; i++){
+        console.log(toys[i]);
+      }
+
+      let list = [8, 3, 11, 9, 6];
+
+      // loops used to display repetitive elements
+      for(var i=0; i <list.length; i++){
+        var li = '<li>' + list[i] + '</li>';
+        document.write(li);
+      }
+
+      // loops can also be used to search for values
+      for (let value of list){
+        if(value < 10){
+          document.write(value);
+        }
+      }
+
+    </script>
+  </body>
+</html>

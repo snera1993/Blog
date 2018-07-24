@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form validation</title>
+  </head>
+  <body>
+<h1>Registration Form</h1>
+<br/>
+
+<form class="" action="index.html" method="post">
+
+<p>
+User id:  <input type="text" name="user id" required value="" placeholder="Must be length of 5 to 12">
+</p>
+
+<p>
+Password: <input type="password" name="" required value=""  placeholder="Must be length of 7 to 12" >
+</p>
+
+<p>
+Name: <input type="text" name="" required value="" placeholder="alphabets only">
+</p>
+
+Address: <input type="text" name="" value="" placeholder="Optional">
+
+<p>
+Country:<select class="" name="Country">
+  <option value="south africa">South Africa</option>
+  <option value="india">India</option>
+  <option value="china">China</option>
+  <option value="namibia">Namibia</option>
+  <option value="North America">North America</option>
+  <option value="madagascar">Madagascar</option>
+
+</select>
+</p>
+
+<p>
+Zip Code:<input type="number" name="" required value="">
+</p>
+
+<p>
+Email: <input type="mail" name="email" required value="" placeholder="valid email">
+</p>
+
+<p>
+Sex: <input type="radio" name="chooseone" required value="male">Male
+    <input type="radio" name="chooseone" required value="female">Female
+</p>
+
+<p>
+Language:
+    <input type="checkbox" name="Language" required onclick="return KeepCountS()" value="yes">English
+    <input type="checkbox" name="Language" required onclick="return KeepCount()" value="no">NoN-English
+</p>
+
+<p>About:</p>
+<textarea name="name" rows="8" cols="80" placeholder="Optional"></textarea>
+
+<p>
+<input type="submit" name="submit" value="submit">
+</p>
+
+
+</form>
+
+
+  </body>
+</html>

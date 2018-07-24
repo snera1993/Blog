@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li>them</li>
+        <li>us</li>
+      </ul>
+    </nav>
+
+
+
+
+    <script>
+
+      // function showMessage() {
+      //   console.log('Hello everyone!');
+      // }
+      //
+      //
+      // showMessage();
+      // showMessage();
+
+
+      // function showMessage() {
+      //   let message = "Hello, i'm JavaScript!"; // local variable
+      //   alert(message);
+      // }
+      //
+      // // showMessage(); //Hello,i'm JavaScript!
+      // or
+      // alert(message);
+
+
+      // let userName = 'Michael';
+      //
+      // function showMessage() {
+      //   let message = 'Hello, ' + userName;
+      //   alert(message)
+      // }
+      //
+      //
+      // showMessage(); //Hello, Michael
+
+
+      // function showMessage(from, text) {
+      //   // arguments: from, text
+      //   alert(from + ': ' + text);
+      // }
+      //
+      // showMessage('Michael ','Hello');
+
+
+      // let from = 'Michael';
+      // function showMessage(from, text) {
+      //   from="*" + from + "*";
+      //   alert(from + ': ' + text )
+      // }
+      //
+      // showMessage(from, 'hello')
+
+
+      // NAMING FUNCTIONS
+      //
+      // "create" - createForm
+      // "get"    - getAge
+      // "calc"   - calcSum
+      // "check"  - checkSum
+      // "show"   - showDate
+      // "set"    - setInterval
+
+
+      // objects are a large part of JavaScript programming. in this
+      // you can think of an object as a single item that holds multiple variables.
+      // we can imagine an object as a cabinet with signed files. every piece of data is stored in its file by the key. its easy to find a file body
+      //
+      //
+      // in the user object, there are two
+
+      // let user = { //an object
+      //   name: "michael", //by key 'name' store value "michael"
+      //   age: 25,  //by key 'age' store value "25"
+      //   "loves coffee":true //multi word
+      // }
+      //
+      // alert(user.name);
+      //
+      // alert(user["loves coffee"]);
+
+      //a property has a key(also known as "name" or "identifier") before the colon ";" and a value to the right of it.
+
+      //in the user object, there are two properties:
+
+      //the first property has the name "name" and the value
+
+      // let student = {
+      //   name: "michael",
+      //   age: 25,
+      //   suburb: "mfuleni",
+      //   modules: "html ,css ,sass ,JavaScript "
+      // }
+      //
+      // //delete
+      // delete student.age
+      //
+      // //get fields of the objects:
+      // alert(student.age)
+      // document.write(student.modules)
+
+      //create an empty object userAdmin.
+      //Add the proprty name with the value Nate.
+      //Add the property surname with the value Smith.
+      //change the value of the name to "yourName".
+      //Remove the property name from the object.
+
+      // let userAdmin = {
+      //   name: "Nate",
+      //   surname: "Smith",
+      //   name: "michael"
+      //
+      // }
+      //
+      //
+      // delete userAdmin.name
+      //
+      // console.log(userAdmin);
+
+      //we have an object storing wages of our class:
+      //wirte the code to sum all wages an d store in the variables sub
+      //If wage is empty then the sum should be zero
+
+      // let wages = {
+      //   jadon: 100,
+      //   michael: 200,
+      //   Umr: 50,
+      //   sithule: 80,
+      //   aqueelah: 250,
+      //   chad: 150,
+      //   odwa: 40,
+      //   deteboho: 100,
+      //   jammie: 300,
+      //   rustin
+      //   jarod: 20,
+      //   vicario: 30,
+      //   specious: 350,
+      //   nkosi: 60,
+      //   wahaaj: 190,
+      //   ridaah: 100
+      //
+      // };
+      //
+      // let sum = 0;
+      // for (let key in wages){
+      //   sum += wages[key];
+      // }
+      //
+      // console.log(sum);
+
+      //MEHTODS
+
+      // let user = {
+      //   name: "michael",
+      //   age: 25
+      // };
+      //
+      // user.sayHi = function() {
+      //   alert("Hello");
+      // };
+      //
+      // user.sayHi(); //Hello
+
+
+    //   let user = {
+    //     name:"Emma",
+    //     age: 25,
+    //
+    //   sayHi() {
+    //     alert(this.name);
+    //   }
+    // };
+    //   user.sayHi();
+
+      // let user = {
+      //   name: "Emma",
+      //   age: 26,
+      //
+      //   sayHi() {
+      //     alert(user.name); //leads to an error
+      //   }
+      // };
+      //
+      // let admin = user;
+      // user = null; //overwrites to make things obvious
+      //
+      // admin.sayHi();
+
+      // let user = {
+      //   firstName: "Thor",
+      //   sayHi() {
+      //     let arrow = () => alert(this.firstName);
+      //     arrow();
+      //   }
+      // }
+      //
+      // user.sayHi(); //Thor
+
+      //When we write our codes
+
+      //CHALLENGE
+      //your friend got a puppy, you want to find out what this puppy looks like.
+      //create an inputs and a button, you can even use a dropdown if you want.
+      //your inputs must allow your friend to insert details about her puppy.
+      //i.e. eye color : blue
+      //your friend must be able to manually set the property and the value.
+      //you must have at least 5 properties for the puppy.
+      //add validation to check for 5 properties
+      //add all the property: values to an object and display it on the screen.
+
+      //when a function is declared, it may use this, but that this has no value until the function is called.
+
+      //Create an object calculator with three methods:
+      //read() prompt for two values and saves them as object properties.
+      //sum() returns the sum of saved values.
+      //mul() multiplies saved values and returns the result.
+
+      // let calculator = {
+      //   read() {
+      //     this.a = +prompt('a?', 0);
+      //     this.b = +prompt('b?', 0);
+      //   },
+      //
+      //   sum() {
+      //     return this.a + this.b;
+      //   },
+      //
+      //   mul() {
+      //     return this.a * this.b
+      //   }
+      // };
+      //
+      // calculator.read();
+      // alert(calculator.sum() );
+      // alert(calculator.mul() );
+
+      // function User(name) {
+      //   this.name = name;
+      //   this.isAdmin = false;
+      // }
+      //
+      // let user = new User("Steve Rogers");
+      //
+      // alert(user.name);
+
+
+      //now
+
+      function BigUser() {
+        this.name = "Spiderman";
+        return {name: "Hulk" }; //returns an object
+      }
+
+      alert(new BigUser().name); //Hulk got that objects
+
+      // //And here's an example with an empty return (or we could place a primitive after it, doesn't matter):
+      //
+      function User(name) {
+        this.name = "mike";
+
+        this.sayHi = function () {
+          alert("My name is: " + this.name);
+        };
+      }
+    </script>
+  </body>
+</html>

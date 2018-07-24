@@ -1,0 +1,26 @@
+
+
+
+
+
+.circle1{
+  background: red;
+  height: 16em;
+  width: 16em;
+  border-radius: 50%;
+
+}
+
+.circle2{
+  background: purple;
+  height: 16em;
+  width: 16em;
+  border-radius: 50%;
+}
+
+.circle3{
+  background: yellow;
+  height: 16em;
+  width: 16em;
+  border-radius: 50%;
+}

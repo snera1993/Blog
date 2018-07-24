@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form class="" action="index.html" method="post">
+
+    <p>
+      Name:<input type="text" name="name" value="" id="name" required>
+    </p>
+
+    <p>
+      Surname:<input type="text" name="surname" value="" id="surname" required>
+    </p>
+
+    <p>
+      Number:<input type="number" name="number" value="" id="number" required>
+    </p>
+
+    <p>
+      Email:<input type="mail" name="email" value="" id="email" required>
+    </p>
+
+    <p>
+      Message:<textarea name="name" rows="8" cols="80" required></textarea>
+    </p>
+
+
+    <p>
+      <button onclick="btnClick" type="button" name="button" id="btn">submit</button>
+    </p>
+
+
+    </form>
+
+
+
+
+
+    <script>
+
+    document.getElementById('btn').onclick = function(){
+        //grabs value from input
+        var nameInput = document.getElementById('name').value;
+        var surnameInput = document.getElementById('surname').value;
+        var numberInput = document.getElementById('number').value;
+        var emailInput = document.getElementById('email').value;
+
+        if(typeof(nameInput) == "string"){
+          // console.log('string check working')
+          console.log('invalid name length')
+ 
+          if ((nameInput.length) <3) {
+            console.log('')
+          }
+        }
+
+        if (nameInput) {
+          //logs value to console
+          console.log(nameInput);
+        }
+        else if(!nameInput){
+          alert('Please enter your name');
+        }
+        else {
+          alert('Please go away');
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+  </body>
+</html>

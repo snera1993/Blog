@@ -1,0 +1,106 @@
+@media screen and (max-width: 1080px){
+  
+    @mixin panel-default() {
+      width: 300px;
+
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .plans {
+      display: grid;
+      grid-template-columns: auto;
+      background-color: white;
+      grid-column-gap: 5px;
+      padding: 10px;
+      justify-content: center;
+    }
+  
+    .panel-1, .panel-2, .panel-3 {
+      @include panel-default();
+      .panel-image {
+        // background-attachment: fixed; This creates a parallax effect
+        height: 300px;
+        width: inherit;
+      }
+    }
+}
+
+@media screen and (max-width: 640px){
+  .header-text .secondary-button{
+    margin: 10px;
+  }
+
+  .header-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin panel-default() {
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    grid-column-gap: 5px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .panel-1, .panel-2, .panel-3 {
+    @include panel-default();
+    .panel-image {
+      // background-attachment: fixed; This creates a parallax effect
+      height: 300px;
+      width: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  .topnav {
+    width: 100%;
+  }
+
+  .header-text .secondary-button{
+    margin: 10px;
+  }
+  
+
+  .header-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin panel-default() {
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    grid-column-gap: 5px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .panel-1, .panel-2, .panel-3 {
+    @include panel-default();
+    .panel-image {
+      // background-attachment: fixed; This creates a parallax effect
+      height: 300px;
+      width: inherit;
+    }
+  }
+}
