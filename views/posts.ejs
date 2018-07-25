@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Latest compiled and minified CSS -->
+   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="http://localhost:3000/">HOME<span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="posts">POSTS</a></li>
+                <li><a href="contact">CONTACT</a></li>
+            </ul>
+        </div>
+      </nav>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+      <div class="container">
+        <div class="navbar"></div>
+
+        <div class="row">
+          <form method="POST" action="/posts">
+            <div class="input-group">
+              <label for="author">Author</label>
+              <input type="text" class="form-control" placeholder="username" id="Author" name="author">
+            </div>
+
+            <div class="input-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" placeholder="title" id="Title" name="title">
+            </div>
+
+
+            <div class="input-group">
+              <label for="author">Date-Time</label>
+              <input type="text" class="form-control" placeholder="date_time" id="datetime" name="date_time">
+            </div>
+
+            <div class="input-group">
+              <textarea name="content" id="summernote"></textarea>
+              <script>
+                $(document).ready(function () {
+                  $('#summernote').summernote({
+                    height: 150
+                  });
+                });
+              </script>
+
+            </div>
+             
+            <button class="btn btn-primary">POST</button>
+          </form>
+
+        </div>
+
+      </div>
+
+
+  </body>
+</html>
